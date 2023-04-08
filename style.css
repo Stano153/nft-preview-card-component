@@ -24,6 +24,8 @@ body {
     place-items: center;
 }
 
+@media only screen and (min-width: 375px) {
+
 .card {
     background-color: var(--clr-dblue-cbg);
     border-radius: 15px;
@@ -163,26 +165,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .attribution {
     position: fixed;
     bottom: 0.5rem;
@@ -191,4 +173,6 @@ body {
 
 .attribution a {
     color: var(--clr-blue);
+}
+
 }
