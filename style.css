@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --clr-blue:hsl(215, 51%, 70%);
+    --clr-cyan:hsl(178, 100%, 50%);
+    --clr-dblue-mbg:hsl(217, 54%, 11%);
+    --clr-dblue-cbg:hsl(216, 50%, 16%);
+    --clr-dblue-line:hsl(215, 32%, 27%);
+    --clr-white:hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--clr-dblue-mbg);
+    color: #fff;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    background-color: var(--clr-dblue-cbg);
+    border-radius: 15px;
+    padding: 1.6rem;
+    max-width: 330px;
+    box-shadow: 1px 17px 8px 4px rgba(0, 0, 0, 0.11);
+}
+
+/*OVERLAY */
+
+.image-container {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    height: 300px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr-cyan);
+    border-radius: 10px;
+    opacity: 0;
+    transition:0.5s ease;
+  }
+
+  .overlay img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .image-container:hover .overlay {
+    opacity: 0.6;
+  }
+
+  .card .image-container > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+/*TEXT */
+.text h1, .text p {
+    padding-top: 1rem;
+}
+
+.text h1 {
+    font-size: 1.5rem;
+    color: var(--clr-white);
+}
+
+.text h1:hover {
+    color: var(--clr-cyan);
+    cursor: pointer;
+}
+
+.text p {
+    font-size: 1rem;
+    color: var(--clr-blue);
+}
+  
+/* INFO*/
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.amount, .time {
+    display: flex;
+    gap: 0.5em;
+}
+
+.amount {
+    font-weight: 600;
+    color: var(--clr-cyan);
+}
+
+.time {
+    font-weight: 300;
+    color: var(--clr-blue);
+}
+
+.info img {
+    object-fit: cover;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--clr-dblue-line);
+}
+
+/*ACCOUNT */
+.account {
+    display: flex;
+    align-items: center;
+    gap:0.7rem;
+    margin-top: 1rem;
+}
+
+.profile-container {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.account-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.profile-name p {
+    color: var(--clr-blue);
+    font-size: 1rem;
+}
+
+.profile-name a {
+    color: var(--clr-white);
+    text-decoration: none;
+}
+
+.profile-name a:hover {
+    color: var(--clr-cyan);
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+    position: fixed;
+    bottom: 0.5rem;
+    justify-self: center;
+}
+
+.attribution a {
+    color: var(--clr-blue);
+}
