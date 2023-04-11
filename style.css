@@ -105,6 +105,7 @@ body {
     display: flex;
     gap: 0.5em;
     font-size: 1rem;
+    width: 50%;
 }
 
 .amount {
@@ -115,6 +116,7 @@ body {
 .time {
     font-weight: 300;
     color: var(--clr-blue);
+    justify-content: end;
 }
 
 .info img {
